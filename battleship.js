@@ -6,13 +6,14 @@ $(document).ready(function(){
   }
  }
   $("td").on("click", function() {
-   $(this).addClass("hit");
+    $("#torpedoCount").text("Torpedo Count: " + count++)
+    //turn off the click on this TD
+    // $("td").click(function(){} --> worked after commenting this out becuase it was making you click twice before triggering the "off click"
+      $(this).off("click");
+    //click triggers 'hit' class and changes color of tile
+    $(this).addClass("hit");
   })
-
-  var count = 1;
-  $(this).on("click", function(){
-    $("#torpedoCount").text("Torpedo Count" + count++)
-  })
+ var count = 1;
 });
 
 //'<tr id="' + row + '">'
