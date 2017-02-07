@@ -8,9 +8,15 @@ $(document).ready(function(){
   $("td").on("click", function() {
    $(this).addClass("hit");
   })
-  // var count = 1;
-  // $(this).on("click", function(){
-  //   $("hitCount").text("Hit Count " = count++); })
+
+  var count = 1;
+  $(this).on("click", function(){
+    $("#torpedoCount").text("Torpedo Count" + count++)
+  })
 });
 
 //'<tr id="' + row + '">'
+
+
+// create a counter to keep track of how many torpedos the user has left
+//num = +$(".counter").val();
