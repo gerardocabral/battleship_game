@@ -1,0 +1,28 @@
+h1 {
+  text-align: center;
+  color: #33691E
+
+
+}
+#gameBoard {
+  margin-left: 25%;
+  height: 700px;
+  width: 700px;
+  background-color: black;
+  border-style: solid;
+  border-color: blue;
+
+}
+.tile{
+  background-color: blue;
+  border-style: solid;
+  border-color: black;
+}
+
+p {
+  text-align: center;
+}
+
+.hit{
+  background-color: red;
+}
