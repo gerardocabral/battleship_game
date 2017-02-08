@@ -13,7 +13,13 @@ $(document).ready(function(){
       $("#miss").text("MISS");
     }else if(board[row][col] == 1) {
       $("#hit").text("HIT");
+      $("#hit").text("HIT Count: " + hit++)
+    }else if (hit == 5){
+      $("#winner").text("You WIN!");
+    } else if (hit != 5 && count > 25){
+        $("#winner").text("YOU LOSE!!")
     }
+
     // $(this).click(function () {
     //   $(".hitMiss").hide();
     // })
@@ -24,6 +30,8 @@ $(document).ready(function(){
     $(this).addClass("hit");
   })
  var count = 1;
+ var hit = 1;
+ var miss = "";
 
 });
 
@@ -37,3 +45,8 @@ $(document).ready(function(){
 //.on click let the user know if the ship was hit or miss
 // board[row][col] == 0 ---> miss
 // board[row][col] == 1 ---> hit
+
+//STEP 7&8 reference
+//need to have a way to stop the game after 5 hits to display winner:
+//if #hit == 5 .text --> you win
+//else if #hit != 5 && #torpedoCount >25 .text --> you lose
