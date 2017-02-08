@@ -1,8 +1,7 @@
 h1 {
   text-align: center;
-  color: #33691E;
-
-
+  color: #83adb5;
+  font-family: 'Special Elite', cursive;
 }
 #gameBoard {
   margin-left: 25%;
@@ -14,15 +13,47 @@ h1 {
 
 }
 .tile{
-  background-color: blue;
+  background-color: skyblue;
   border-style: solid;
   border-color: black;
 }
 
 p {
   text-align: center;
+  font-family: 'Special Elite', cursive;
+  font-size: 15pt;
 }
 
 .hit{
   background-color: red;
+}
+
+h3{
+  text-align: center;
+  font-family: 'Special Elite', cursive;
+}
+
+button{
+
+  margin-left: 500px;
+  font-family: 'Special Elite', cursive;
+}
+h2 {
+  text-align:right;
+  margin-right: 400px;
+  font-family: 'Special Elite', cursive;
+}
+
+footer {
+  text-align: right;
+  padding-top: 50px;
+  padding-bottom: 10px;
+  margin-right: 10px;
+  font-family: 'Special Elite', cursive;
+}
+
+#ship{
+  text-align: center;
+  color: #2e4045;
+
 }
