@@ -1,8 +1,8 @@
 $(document).ready(function(){
- for (var row = 0; row < 10; row++) {
-  $("table").append('<tr id="' + row + '"></tr>')
-  for (var col = 0; col < 10; col++) {
-     $('#' + row).append('<td class="tile"></td>')
+ for (var r = 0; r < 10; r++) {
+  $("table").append('<tr id="' + r + '"></tr>')
+  for (var c = 0; c < 10; c++) {
+     $('#' + r).append('<td class="tile"></td>')
   }
  }
   $("td").on("click", function() {
