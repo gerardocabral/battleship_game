@@ -1,4 +1,5 @@
 $(document).ready(function(){
+  shipSpot();
  for (var r = 0; r < 10; r++) {
   $("table").append('<tr id="' + r + '"></tr>')
   for (var c = 0; c < 10; c++) {
@@ -13,11 +14,16 @@ $(document).ready(function(){
       $("#miss").text("MISS");
     }else if(board[row][col] == 1) {
       $("#hit").text("HIT");
-      $("#hit").text("HIT Count: " + hit++)
-    }else if (hit == 5){
+      $("#hit").text("HIT Count: " + (hit+=1))
+      alert(hit);
+    }
+      if (hit == 5){
       $("#winner").text("You WIN!");
+      $("td").off("click");
     } else if (hit != 5 && count > 25){
         $("#winner").text("YOU LOSE!!")
+        $(ship).addClass("show")
+        $("td").off("click");
     }
 
     // $(this).click(function () {
@@ -30,7 +36,7 @@ $(document).ready(function(){
     $(this).addClass("hit");
   })
  var count = 1;
- var hit = 1;
+ var hit = 0;
  var miss = "";
 
 });

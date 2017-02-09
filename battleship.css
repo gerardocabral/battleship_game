@@ -1,8 +1,11 @@
 h1 {
   text-align: center;
-  color: #83adb5;
+  color: #0392cf;
   font-family: 'Special Elite', cursive;
+  font-size: 45pt;
 }
+
+
 #gameBoard {
   margin-left: 25%;
   height: 700px;
@@ -10,6 +13,7 @@ h1 {
   background-color: black;
   border-style: solid;
   border-color: blue;
+  opacity: 0.7;
 
 }
 .tile{
@@ -22,6 +26,7 @@ p {
   text-align: center;
   font-family: 'Special Elite', cursive;
   font-size: 15pt;
+  color: #0392cf;
 }
 
 .hit{
@@ -54,6 +59,27 @@ footer {
 
 #ship{
   text-align: center;
-  color: #2e4045;
+  color: #83adb5;
+}
 
+#torpedoCount{
+  color: #4b86b4;
+  font-size: 20pt;
+}
+
+.show{
+  background-color: black;
+}
+body{
+  background-image: url(http://i.huffpost.com/gen/1496805/thumbs/o-7-900.jpg?1);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#hit, #miss, #try {
+  color: #0392cf;
+}
+
+#winner{
+  color: #4b86b4;
 }
