@@ -29,9 +29,9 @@ function shipSpot() {
     //for loop --> to gain 5 ship spots
     var row = Math.floor(Math.random() * 10);
     var col = Math.floor(Math.random() * 10);
-    if(board[row][col] == 0){
+    if(board[row][col] == 0 || board[row][col] -1 == 0 || board[row][col] +1 == 0 || board[col] -1 == 0 || board[col] -1 == 0){
       board[row][col] = ship;
-      survivors.push(row.toString() + col.toString())
+      survivors.push(row.toString() + col.toString());
     }
   };
 
