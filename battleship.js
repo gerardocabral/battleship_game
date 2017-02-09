@@ -9,7 +9,7 @@ $(document).ready(function(){
   $("td").on("click", function() {
     var row = $(this).attr("id") [0];
     var col = $(this).attr("id") [1];
-    $("#torpedoCount").text("Torpedo Count: " + count++)
+    $("#torpedoCount").text("Torpedo Count: " + (count--))
     if (board[row][col] == 0){
       $("#miss").text("MISS");
     }else if(board[row][col] == 1) {
@@ -20,7 +20,7 @@ $(document).ready(function(){
       if (hit == 5){
       $("#winner").text("You WIN!");
       $("td").off("click");
-    } else if (hit != 5 && count > 25){
+    } else if (hit != 5 && count < 0){
         $("#winner").text("YOU LOSE!!")
         survivors.forEach(function(survivors){
           $("#" + survivors).addClass("reveal")
@@ -37,7 +37,7 @@ $(document).ready(function(){
     //click triggers 'hit' class and changes color of tile
     $(this).addClass("hit");
   })
- var count = 1;
+ var count = 24;
  var hit = 0;
  var miss = "";
 
