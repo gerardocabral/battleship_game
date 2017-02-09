@@ -22,7 +22,9 @@ $(document).ready(function(){
       $("td").off("click");
     } else if (hit != 5 && count > 25){
         $("#winner").text("YOU LOSE!!")
-        $(ship).addClass("show")
+        survivors.forEach(function(survivors){
+          $("#" + survivors).addClass("reveal")
+        });
         $("td").off("click");
     }
 

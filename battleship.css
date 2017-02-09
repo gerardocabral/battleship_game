@@ -7,7 +7,7 @@ h1 {
 
 
 #gameBoard {
-  margin-left: 25%;
+  margin: 0 auto;
   height: 700px;
   width: 700px;
   background-color: black;
@@ -17,7 +17,7 @@ h1 {
 
 }
 .tile{
-  background-color: skyblue;
+  background-color: blue;
   border-style: solid;
   border-color: black;
 }
@@ -67,8 +67,8 @@ footer {
   font-size: 20pt;
 }
 
-.show{
-  background-color: black;
+.reveal{
+  background-color: #FFF;
 }
 body{
   background-image: url(http://i.huffpost.com/gen/1496805/thumbs/o-7-900.jpg?1);

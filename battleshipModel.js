@@ -14,6 +14,8 @@ var board = [
     [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
   ];
 
+  var survivors = [];
+
 
   // var direction = Math.floor(Math.random() * 3);
   // console.log(direciton)
@@ -29,6 +31,7 @@ function shipSpot() {
     var col = Math.floor(Math.random() * 10);
     if(board[row][col] == 0){
       board[row][col] = ship;
+      survivors.push(row.toString() + col.toString())
     }
   };
 
