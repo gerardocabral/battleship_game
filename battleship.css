@@ -63,12 +63,12 @@ footer {
 }
 
 #torpedoCount{
-  color: #4b86b4;
+  color: #black;
   font-size: 20pt;
 }
 
 .reveal{
-  background-color: #FFF;
+  background-color: #444444;
 }
 body{
   background-image: url(http://i.huffpost.com/gen/1496805/thumbs/o-7-900.jpg?1);
@@ -76,10 +76,17 @@ body{
   background-repeat: no-repeat;
 }
 
-#hit, #miss, #try {
-  color: #0392cf;
+#miss, #try {
+  color: skyblue;
+}
+#hit {
+  color: #fe2e2e
 }
 
 #winner{
-  color: #4b86b4;
+  color: black;
+}
+
+.misses{
+  background-color: skyblue;
 }

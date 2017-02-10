@@ -11,19 +11,33 @@ $(document).ready(function(){
     var col = $(this).attr("id") [1];
     $("#torpedoCount").text("Torpedo Count: " + (count--))
     if (board[row][col] == 0){
-      $("#miss").text("MISS");
+      $("#miss").text("MISS")
+      $(this).addClass("misses");
     }else if(board[row][col] == 1) {
       $("#hit").text("HIT");
       $("#hit").text("HIT Count: " + (hit+=1))
-      alert(hit);
+      alert("NICE SHOT SOLDIER");
     }
-      if (hit == 5){
+      if (hit == 15){
       $("#winner").text("You WIN!");
       $("td").off("click");
-    } else if (hit != 5 && count < 0){
+    } else if (hit != 15 && count < 0){
         $("#winner").text("YOU LOSE!!")
+        alert("GO BACK TO BOOTCAMP")
         survivors.forEach(function(survivors){
           $("#" + survivors).addClass("reveal")
+        })
+        fiveShip.forEach(function(fiveShip){
+          $("#" + fiveShip).addClass("reveal")
+        })
+        fourShip.forEach(function(fourShip){
+          $("#" + fourShip).addClass("reveal")
+        })
+        threeShip.forEach(function(threeShip){
+          $("#" + threeShip).addClass("reveal")
+        })
+        twoShip.forEach(function(twoShip){
+          $("#" + twoShip).addClass("reveal")
         });
         $("td").off("click");
     }
