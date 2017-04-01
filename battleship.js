@@ -51,7 +51,15 @@ $(document).ready(function(){
     //click triggers 'hit' class and changes color of tile
     $(this).addClass("hit");
   })
- var count = 24;
+      // resets gameboard
+    $("button").on("click", function() {
+    // clearShips();
+    // board = [];
+    // game1=game();
+    location.reload();
+  })
+
+ var count = 34;
  var hit = 0;
  var miss = "";
 

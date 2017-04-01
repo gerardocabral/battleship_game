@@ -1,7 +1,6 @@
 h1 {
   text-align: center;
   color: #0392cf;
-  font-family: 'Special Elite', cursive;
   font-size: 45pt;
 }
 
@@ -24,7 +23,6 @@ h1 {
 
 p {
   text-align: center;
-  font-family: 'Special Elite', cursive;
   font-size: 15pt;
   color: #0392cf;
 }
@@ -35,26 +33,23 @@ p {
 
 h3{
   text-align: center;
-  font-family: 'Special Elite', cursive;
 }
 
 button{
-
-  margin-left: 500px;
-  font-family: 'Special Elite', cursive;
+  margin-left: 50px;
 }
+
 h2 {
   text-align:right;
   margin-right: 400px;
-  font-family: 'Special Elite', cursive;
 }
 
 footer {
+  color: #83adb5;
   text-align: right;
   padding-top: 50px;
   padding-bottom: 10px;
   margin-right: 10px;
-  font-family: 'Special Elite', cursive;
 }
 
 #ship{
@@ -63,7 +58,8 @@ footer {
 }
 
 #torpedoCount{
-  color: #black;
+  margin-top: 100px;
+  color: #0392cf;
   font-size: 20pt;
 }
 
@@ -71,9 +67,10 @@ footer {
   background-color: #444444;
 }
 body{
-  background-image: url(http://i.huffpost.com/gen/1496805/thumbs/o-7-900.jpg?1);
+  background-image: url(https://upload.wikimedia.org/wikipedia/commons/8/83/USS_Texas2.jpg);
   background-size: cover;
   background-repeat: no-repeat;
+  font-family: 'Special Elite', cursive;
 }
 
 #miss, #try {
@@ -84,7 +81,7 @@ body{
 }
 
 #winner{
-  color: black;
+  color: #83adb5;
 }
 
 .misses{
